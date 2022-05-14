@@ -10,5 +10,5 @@ class Monitor:
 
 
 lg = Monitor(1500,500,1000)
-philips = Monitor()
-
+philips = Monitor(1250,400,900)
+print(lg.displayResolution)
