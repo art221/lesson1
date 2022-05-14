@@ -7,16 +7,14 @@ class Monitor:
         self.displayResolution = px
         self.screenSize = dm
         self.rate = Hz
+    def printInfo(self,name):
+        print(f"{name:^12}")
+        print("display Resolution:", self.displayResolution)
+        print("screenSize", self.screenSize)
+        print("rate", self.rate)
 
 
 lg = Monitor(1500,500,1000)
 philips = Monitor(1250,400,900)
-print("--==LG==--")
-print("display Resolution:", lg.displayResolution)
-print("screenSize", lg.screenSize)
-print("rate", lg.rate)
-print("--===PHILIPS===--")
-print("--==LG==--")
-print("display Resolution:", philips.displayResolution)
-print("screenSize", philips.screenSize)
-print("rate", philips.rate)
+lg.printInfo("LG")
+philips.printInfo("PHILIPS")
