@@ -1,9 +1,10 @@
-class First:
-    def func1(self):
-        pass
-class Second:
-    def func2(self):
-        pass
-class Third(First,Second):
-    def func3(self):
-        pass
+p = (0,10)
+it = iter(p)
+l = [(1+next(it)*5) for a in range(1,10)]
+print(l)
+it = iter(l)
+while it:
+    try:
+        print((next(it)))
+    except:
+        break
